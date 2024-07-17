@@ -1,0 +1,17 @@
+{ "base_dir": "<your_path_here>/gms_openmm_code_sample/full_westpa_example",
+  "parent_prefix": "parent",
+  "child_prefix": "seg",
+  "psf_filename": "basis.psf",
+  "toppar_filename": "toppar.str",
+  "system_path": "abl1_drude_system.xml",
+  "platform": "CUDA",
+  "integration_ts": 0.001,
+  "log_save_freq": 5,
+  "xyz_save_freq": 100,
+  "prod_tau": 100,
+  "nonbondedCutoff": 1.2,
+  "switchDistance": 1.0,
+  "ewaldErrorTolerance": 0.0001,
+  "temperature": 310,
+  "pressure": 1
+}
