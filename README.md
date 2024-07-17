@@ -14,9 +14,9 @@ Since there are many moving parts to a WESTPA simulation, I added a simplified e
 
 To run the simulation:
 
-1. Change the "base_dir" path in the configuration file (`just_propagation_example/common_files/abl1_drude_config.json`).
+1. Change the `base_dir` path in the configuration file (`just_propagation_example/common_files/abl1_drude_config.json`).
 2. Optionally, modify the simulation parameters/platform.
-3. While in '<your_path>/gms_openmm_code_sample/just_propagation_example/common_files', run "prod_drude_no_westpa.py" (no arguments needed)
+3. While in `<your_path>/gms_openmm_code_sample/just_propagation_example/common_files`, run `prod_drude_no_westpa.py` (no arguments needed)
 
 The purpose of `just_propagation_example` is to exemplify the propagation (MD) step of a WESTPA run. It does not include any analysis or resampling/splitting/etc.
 
@@ -45,11 +45,11 @@ If you wish to change the OpenMM system parameters (such as adding/removing forc
 
 To save disk space, the full WESTPA example only saves two frames per segment (`seg.pdb` and `parent.pdb`). Each consecutive segment is separated by a timescale of `prod_tau` (default is 100 ps).
 
-Changing this requires changing the 'pcoord_len: 2' property in 'west.cfg' to the number of frames you want to save, and also updating 'xyz_save_freq' in 'abl1_drude_config.json'
+Changing this requires changing the `pcoord_len: 2` property in `west.cfg` to the number of frames you want to save, and also updating `xyz_save_freq` in `abl1_drude_config.json`
 
 ### Why dt = 1fs?
 
-We use an integration timestep of 1 fs (0.001 ps) since this simulation uses the Drude polarizable forcefield.
+We use an integration timestep of 1 fs (0.001 ps) since this simulation uses the Drude polarizable forcefield which requires this resolution.
 
 ### Time Units in Configuration File
 
