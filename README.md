@@ -18,7 +18,7 @@ To run the simulation:
 2. Optionally, modify the simulation parameters/platform.
 3. While in `<your_path>/gms_openmm_code_sample/just_propagation_example/common_files`, run `prod_drude_no_westpa.py` (no arguments needed)
 
-The purpose of `just_propagation_example` is to exemplify the propagation (MD) step of a WESTPA run. It does not include any analysis or resampling/splitting/etc.
+The purpose of `just_propagation_example` is to illustrate the propagation (MD) step of a WESTPA run with OpenMM. It does not include any analysis or resampling/splitting/etc.
 
 ## Full WESTPA Example
 
